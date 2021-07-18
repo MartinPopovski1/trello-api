@@ -1,0 +1,24 @@
+My Linq - Implement List Methods,
+My Base Linq - Implement some Extensions where T is BaseModel
+
+Edit Base Model - Remove Name, Deleted. Implement ISoftDelete Interface, IRecordHistory Interface
+
+User, UserRole, UserPrivilege.
+
+Instal System.Runtime.Caching
+InMemoryCache
+
+OAuth
+
+Studenti - 10
+
+100 
+
+SELECT s.Age,s.Name, Count(*), FROM Student s GROUP BY s.Age,s.Name
+
+
+17,18, Darko
+17,2, Stefan
+
+19,20,
+20,60

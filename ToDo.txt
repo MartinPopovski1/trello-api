@@ -1,0 +1,81 @@
+﻿====================================
+
+Validators to return ValidationResult.
+All Validations should be in Handler.
+Remove Try Catch Blocks from Controllers.
+
+====================================
+
+User-ot
+Treba da ima Lista<Privilege>
+Treba da ima List<UserTickets>
+
+====================================
+
+UserController
+
+CreateUser - (Dopolni so privliegii (ako ima))
+EditUser - (Edit na base user, i edit na privilegii (pisihi brishi))
+
+
+Dodadi relacija UserTickets (m x n)
+
+Users UserTickets Tickets
+
+UserTickets
+-UserId
+-TicketId
+-Nesto da ni tekne
+
+====================================
+
+Dopolni Ticket so
+
+-DueDate
+-TicketState -- Enumeracija // New, Finished
+-FinishDate 
+
+====================================
+
+TicketController 
+{ticketId}/assignUsers
+-- Assing Ticket to Users (moze da e eden ili poveke odednash);
+{ticketId}/removeUsers
+-- Remove Ticket from Users ()
+
+-- ChangeTicket To TicketList (-- not now - Notify Creator or Newly Default Assigned User (through mail))
+
+====================================
+
+TicketList
+
+DefaultAssignedUser 
+ShouldRemoveAssignedUsersOnSwitch =)
+
+====================================
+
+// Reports
+
+// Tickets per users,
+// Finish tickets
+// AverageFinishTime
+
+====================================
+KE NI OSTANE
+
+-- Memory Cache,
+-- Validate User Privileges,
+-- Validate Json Model 
+ 
+====================================
+
+-- Eventualno EntityFramework -- (2 - 3 nedeli =D)
+-- Eventualno WebSockets - (SignalR)
+
+====================================
+
+
+
+
+
+
